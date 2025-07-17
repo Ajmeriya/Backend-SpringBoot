@@ -9,10 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class DemoRestController
 {
-    // try
     @GetMapping("/hello")
     public String hello() {
         return "Hello, World!";
+    }
+
+    @GetMapping("/goodbye")
+    public void someMethod() {
+        System.out.println("Goodbye, World!");
+        // future implementation
     }
 
 }
