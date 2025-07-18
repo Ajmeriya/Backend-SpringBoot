@@ -17,7 +17,7 @@ public class DemoRestController
     @GetMapping("/goodbye")
     public void someMethod() {
         System.out.println("Goodbye, World!");
-        // future implementation
     }
+
 
 }
