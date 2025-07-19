@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e2125d31-3291-4f1b-9b75-0db4631e5ede" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/.idea/01-spring-rest-curd-employee.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-rest-curd-employee/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-employee-sql-script/employee-directory.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ajmeriya"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ajmeriya/Backend-SpringBoot.git",
+    "accountId": "b4ff031b-4f92-423b-99a9-07ad69537a46"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="303wzGAfrwpm1DdLn0utUBXDLjr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/course_new/04-spring-boot-rest-curd/05-curd-project/01-spring-boot-employee-sql-script"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2125d31-3291-4f1b-9b75-0db4631e5ede" name="Changes" comment="" />
+      <created>1752869825082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752869825082</updated>
+    </task>
+    <servers />
+  </component>
+</project>
