@@ -21,8 +21,8 @@ public class EmployeeRestController {
     //quick and dirty : injection employee dao
     public EmployeeRestController(EmployeeService theEmployeeService, ObjectMapper objectMapper)
     {
-        employeeService=theEmployeeService;
-        objectMapper=this.objectMapper;
+        this.employeeService=theEmployeeService;
+        this.objectMapper=objectMapper;
     }
 
     //expose "/employee" and retun a list employee
@@ -73,35 +73,29 @@ public class EmployeeRestController {
     }
 
     @PatchMapping("/employee/{employeeId}")
-    public Employee patchEmployee(@PathVariable int employeeId,@RequestBody Map<String,Object> PatchPayLoad)
-    {
-        Employee tempEmployee=employeeService.findById(employeeId);
+    public Employee patchEmployee(@PathVariable int employeeId, @RequestBody Map<String, Object> patchPayload) {
+        Employee tempEmployee = employeeService.findById(employeeId);
 
-        if(tempEmployee==null)
-        {
-            throw new RuntimeException("employee id not found-" + employeeId);
+        if (tempEmployee == null) {
+            throw new RuntimeException("Employee ID not found - " + employeeId);
         }
-        if(PatchPayLoad.containsKey("id"))
-        {
-            throw new RuntimeException("you are not allow to chnage id");
+
+        if (patchPayload.containsKey("id")) {
+            throw new RuntimeException("You are not allowed to change ID");
         }
-        Employee PatchedEmployee =apply(PatchPayLoad,tempEmployee);
 
-        Employee dbEmployee=employeeService.save(PatchedEmployee);
+        Employee patchedEmployee = apply(patchPayload, tempEmployee);
 
-        return dbEmployee;
-
+        return employeeService.save(patchedEmployee);
     }
 
-    private Employee apply(Map<String, Object> patchPayLoad, Employee tempEmployee) {
+    private Employee apply(Map<String, Object> patchPayload, Employee tempEmployee) {
+        ObjectNode employeeNode = objectMapper.convertValue(tempEmployee, ObjectNode.class);
+        ObjectNode patchNode = objectMapper.convertValue(patchPayload, ObjectNode.class);
 
-        ObjectNode employeeNdoe=objectMapper.convertValue(tempEmployee,ObjectNode.class);
+        employeeNode.setAll(patchNode);
 
-        ObjectNode patchNode=objectMapper.convertValue(patchPayLoad,ObjectNode.class);
-
-        employeeNdoe.setAll(patchNode);
-
-        return objectMapper.convertValue(employeeNdoe,Employee.class);
+        return objectMapper.convertValue(employeeNode, Employee.class);
     }
 
 
